@@ -1,0 +1,55 @@
+
+
+
+
+                                RANGKUMAN IP ADDRESS V4
+                                    Maulana Ifandika
+
+1. Pendahuluan
+    IP atau Internet Protocol Address adalah tanda berbentuk nilai numerik berjumlah 32 bit untuk komputer
+yang terhubung ke jaringan. 
+- Elemen terkait
+    - IP Address
+    - Netmask Address
+    - Network Address
+    - Gateway Address
+    - Broadcast Address
+
+- Konversi ke biner
+    IP : 192.168.20.1
+
+    Rubah setiap segmen menjadi biner.
+    - 192 : 2 
+
+
+2. Subnet Mask/Netmask
+    Hasil total dari penjulahan nilai biner 1, umunya netmask untuk gambaran jumlah klient yang dapat ditampung.
+- Contoh
+    255.255.255.0
+    255.255.0.0
+    255.0.0.0
+- Konversi ke prefik.
+    Netmask            : 255.255.252.0
+    Biner              : 11111111.11111111.11111100.00000000
+    Total biner 1      :    8        8        6         0
+                       : 8 + 8 + 6 + 0
+                       : /22 (Hasil prefik)
+
+
+3. Prefik(Prefix)
+    Identitas untuk jumlah total nilai biner 1. Umumnya berhubungan dengan subnet mask. Jika kita punya netmask
+255.255.255.0 maka jumlah prefik adalah /24 (Prefik disimbolkan dengan "/jumalh_prefik").
+    Netmask : 255.255.255.0
+    Biner   : 11111111.11111111.11111111.00000000  -> 1 segmen berjumlah 8
+                 1         2        3              -> Jumlah nilai 1.
+                                                      = 8(1 segmen nilai biner) x 3(Total segmen berilai 1)
+                                                      = 24
+                                                      Jumlah prefik /24
+Cara konversi dari prefik ke netmask.
+    Prefik : /17
+
+    Ubah ke biner
+    11111111.11111111.10000000.00000000 -> Total nilai biner 1 = 17
+        255     255      128       0       -> 
+
+4. Brodcast

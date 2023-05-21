@@ -1,0 +1,183 @@
+
+
+
+
+                            			RANGKUMAN TEKNIK LAYANAN JARINGAN
+                                    				Maulana Ifandika
+
+1. Materi
+
+1. Wireless
+- Jaringan WAN
+- Jenis Wireless
+- Standar Wireless
+- Gelombang
+- Komponen
+- Bluetooth
+- Protokol Bluetooth
+- Wimax
+- Wi-Fi
+- Wireless (Router, AP, Bridge, Station, Repeater)
+- Keamanan Wireless
+
+2. Fiber Optik
+
+=========
+
+1. Fiber Optik
+    Kabel yang komunikasi menggunakan media cahaya.
+    1.1 Standar kabel FO
+        Patch Card adalah kabel FO yang kedua ujung terpasang konektor.
+    Jenis path card.
+        - Single mode/simplex
+            Memiliki ukuran 8-10 um, panjang gelombang 1.310-1.550 nm. Hanya mampu menjalankan 1 mode.
+        - Multi mode
+            Diameter 50, 62.5, 100 um, mampu transmisi banyak data.
+        - Stadar patch card non-militer = Orange, Orange, Aqua, Aqua/violet, Orange, Kuning, Biru.
+        - Stadar patch card militer = Abu, Orange, ..., ..., Hijau, Kuning, ...
+        - Standar EIA/TIA-598 pewarnaan serat optik menjadi 12 warna berbeda.
+    1.2 Konektor
+        - FC(Fiber Connector)
+            Pada FO single mode.
+        - SC(Subcriber Connector)
+            Digunakan pada FO single mode, lebih mudah, sedehana, murah.
+        - ST(Straight Tipe Connector)
+            Mirip BNC dan ada cekungan pengunci.
+        - D4 Connector
+            Mirip FC Connector dengan ukuran 2 mm.
+    1.3 Komponen jaringan FTTH(Fiber To The Home)
+        Sambungan dari FO yg dapat melalui 3 data berbeda seperti voice ip, IP TV, internet.
+        - Segmen 1/2
+        - Segmen 2/B
+        - Segmen 3/C
+        - Segmen 4/D
+        [
+            - ODF(Optical Distributed Frame)
+                Pusat terminasi FO dari luar(Feeder), monitoring & mengukur FO dan mendistribusikan ke ODF
+            - ODC(Optical Distributed Cabinet)
+                Ruang berbentuk kotak dari bahan khusus sebagai ujung terminasi kabel feeder.
+        ]
+    1.4 Jaringan FTTX
+        Sebutan untuk jaringan lokal yang sudah pakai FO. Perangkat aktif pernagkat yg ada di sentral.
+        Jika pasif ...
+        - Standarnya
+            - AON(Active Optical Network)
+                Perlu alat bertenaga listrik, contoh AON switch, router, sakelar. Menjangkau 60 mil.
+            - PON(Passive Optical Network)
+                Jaringan FO yg mengandalkan splitter. Menjangkau 12 mil.
+    1.5 Tipe jaringan akses FO
+        - FTTB(Fiber To The Building)
+        - FTTZ(Fiber To The Zone)
+        - FTTC(Fiber To The Curb)
+        - FTTT(Fiber To The Tower)
+        - FTTH(fiber To The Home)
+    1.6 Peralatan 
+        1. Fusion Splicer
+        2. stripper Miller
+        3. Claver
+        4. OPM(Optical Power Meter)
+        5. OTDR(Optical Time Domain Reflectormer)
+        7. OLS(Optical Light Source)
+        8. OFI(Optical Fiber Identifier)
+        9. VFL(Visual Fault Locator)
+    1.7 Komponen FO
+    1.8 Pengujian FO
+        - RX = Receiver/penerima
+        - TX = Transfer/pengirim
+    1.9 PON(Passive Optical Network)
+        - GPON(Gigabit PON)
+            Perbaikan dari PON, menggunakan protokol GEM, ATM, Ethernet. Teknologi pada GPON.
+            - OLT(Optical Line Terminal)
+            - ODN(Optical Data Network)
+            - ONT(Optical Network Terminal)
+        - GEPON/EPON
+            Keuntungan GEPON
+            - Fleksibel.
+            - Stabil.
+            - Murah.
+        - Spesifikasi
+                        | Upstream      | Downstream
+            GPON           1,2 GB           2,4 GB
+            GEPON          1,2 GB           1,2 GB
+            BPON           155 MB           622 MB
+    2.1 Media Convertor
+        ONT adalah perangkat dalam FO sebagai converter dari cahaya FO ke sinyal elektronik.
+    - Catatan
+        - Bagian utama cleaver terdiri dari blok mesin, dudukan core, blok pisau/pemotong.
+        - Pigtail adalah kabel FO yang pendek.
+        - Splitter adalah pembagi sinyal FO, termasuk perangkat pasif.
+        - Parameter yang wajib di konfigurasi pd proses splicing Arch Distance, Splie Loss,
+          Jarak Fiber, Error Message.
+        - Join Closure adalah kotak penyabung titik terminasi setiap kabel FO yg terhubung ke jaringan.
+
+2. Komunikasi Data
+        Proses penyampaian dan penerimaan pesan antara dua orang atau lebih.
+    + Simplex
+        - Komunikasi yg hanya bisa 1 arah.
+        + Contoh:
+            - Televisi
+            - Radio
+            - HT
+    + Duplex
+        - Half Duplex
+        - Full Duplex
+
+3. Topologi PSTN(Public Switched Telephone Network)
+    - DP(Distribution Point )
+    + RX(Rumah Kabel)
+        - 
+    + MDF(Main Distribution Frame)
+        - 
+    + Terbagi menjadi 3 bagian:
+        - Backbone | ore network/ jaringan inti yang membangun PSTN, yaitu jaringan yang menghubungkan antar sentral
+        - Akses | menghubungkan sentral sampai ke pelanggan.
+        - Interkoneksi | Untuk bisa saling berkomunikasi dan berbagi
+4. Arsitektur 4G
+5. VoIP(Voice over Internet Protocol)
+    - Teknologi yang memungkinkan percakapan suara jarak jauh melalui media internet
+    + PBX(Private branch exchang)
+        - Sistem telepon di dalam perusahaan yang mengalihkan panggilan antar pengguna di jalur lokal
+    - Softswitch | Sebuah perangkat lunak berfungsi untuk penghubung panggilan telepon antar pelanggan.
+    - Transceiver | Pengirim
+    - Receiver | Penerima
+    + Kelebihan
+        - Biaya lebih rendah untuk dua tempat yang jaraknya jauh. 
+        - Jika kedua tempat tersebut terhubung ke internet, maka VoIP dapat diimplementasikan. 
+        - Jaringan yang sudah ada bisa dibangun tambahan jaringan VoIP dengan mudah. 
+        - Tidak diperlukan tambahan biaya bulanan untuk penambahan komunikasi suara.
+    + Kekurangan
+        - Kualitas suara tidak sejernih jaringan PSTN.
+        - Ada jeda (delay) dalam berkomunikasi.
+        - Jika belum terhubung 24 jam ke internet, perlu janji untuk saling berhubungan.
+        - Tidak pernah ada jaminan kualitas jika VoIP melewati internet.
+    + Protokol VoIP
+        - H.323
+        - Media Gateway Control Protocol (MGCP)
+        - Session Initiation Protocol (SIP)
+        - Real-time Transport Protocol (RTP)
+        - Session Description Protocol (SDP)
+        - Inter-Asterisk eXchange (IAX)
+    + Internet & Infranet
+        - Internet adalah jaringan komputer yang terhubung satu sama lain untuk keperluan komunikasi dan informasi. 
+        - Intarnet adalah jaringan komputer yang saling terhubung dan digunakan pada suatu sistem organisasi. 
+          Misalnya jaringan komputer-komputer PT. Telkom seluruh Indonesia (dikatakan sebagai "internet" khusus). 
+          Intranet berfungsi menghubungkan satu komputer dengan komputer lainnya dalam suatu area.
+6. Email
+    + SMTP(Simple Mail Transfer Protocol)
+        - Untuk mengirim email.
+        - Port 25, 465, 587 or 2525.
+    + POP3(Post Office Protocol)
+        - Untuk pengguna membaca email dari server.
+    + IMAPP(Internet Message Access Protocol)
+        - Untuk manajemen email.
+    + MAPI(Messaging Application Programming Interface)
+        - Untuk komunikasi dengan server email lain.
+
++ Logical port
+    - Identitas dari sebuah layanan
+    + 0-1023
+        - Port yang kita tahu dan digunakan protokol saat ini seperti TCP,UDP,dll.
+    + 1024-49,151
+        - Untuk perusahaan
+    + 49,152-65,535
+        - Dinamik/Privat
